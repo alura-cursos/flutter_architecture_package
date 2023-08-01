@@ -11,6 +11,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../_core/constants/bytebank_screens.dart';
 import '../../_core/widgets/appbar_widget.dart';
+import '../../_core/widgets/balance_widget.dart';
 import '../../_core/widgets/drawer_widget.dart';
 
 class TransfersPage extends StatefulWidget {
@@ -35,6 +36,8 @@ class _TransfersPageState extends State<TransfersPage> {
       body: TransferBackgroundWidget(
         children: [
           const TransferTitleWidget(),
+          const HeightMargin(MarginType.large),
+          const BalanceWidget(color: BytebankColors.black),
           const HeightMargin(MarginType.large),
           TransferTransitionTypeWidget(
             transferType: transferType,
