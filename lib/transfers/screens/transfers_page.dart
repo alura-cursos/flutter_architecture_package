@@ -1,3 +1,4 @@
+import 'package:bytebank_balance/widgets/balance_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bytebank/_core/constants/bytebank_colors.dart';
 import 'package:flutter_bytebank/_core/constants/bytebank_transfers_types.dart';
@@ -11,7 +12,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../_core/constants/bytebank_screens.dart';
 import '../../_core/widgets/appbar_widget.dart';
-import '../../_core/widgets/balance_widget.dart';
 import '../../_core/widgets/drawer_widget.dart';
 
 class TransfersPage extends StatefulWidget {
