@@ -33,6 +33,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  bytebank_balance:
+    dependency: "direct main"
+    description:
+      path: "packages/bytebank_balance"
+      relative: true
+    source: path
+    version: "0.0.1"
   characters:
     dependency: transitive
     description:

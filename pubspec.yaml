@@ -11,6 +11,8 @@ dependencies:
     sdk: flutter
   google_fonts: ^5.1.0
   intl: ^0.18.1
+  bytebank_balance:
+    path: packages/bytebank_balance
 
 dev_dependencies:
   flutter_test:

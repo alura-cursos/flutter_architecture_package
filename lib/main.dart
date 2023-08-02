@@ -1,3 +1,4 @@
+import 'package:bytebank_balance/bytebank_balance.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bytebank/_core/constants/bytebank_routes.dart';
 import 'package:flutter_bytebank/_core/decorations/bytebank_theme_data.dart';
@@ -27,5 +28,9 @@ class MainApp extends StatelessWidget {
         BytebankRoutes.statement: (context) => const StatementPage(),
       },
     );
+  }
+
+  testarPacote() {
+    Calculator();
   }
 }
