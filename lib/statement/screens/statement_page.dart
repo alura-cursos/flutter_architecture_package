@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bytebank/_core/constants/bytebank_colors.dart';
-import 'package:bytebank_balance/widgets/balance_widget.dart';
+import 'package:bytebank_balance/bytebank_balance.dart';
 import 'package:flutter_bytebank/_core/widgets/height_margin.dart';
 import 'package:flutter_bytebank/statement/helpers/generate_fake_transfers.dart';
 import 'package:flutter_bytebank/statement/models/transfer_model.dart';
@@ -41,7 +41,7 @@ class _StatementPageState extends State<StatementPage> {
         children: [
           const StatementTitleWidget(),
           const HeightMargin(MarginType.large),
-          const BalanceWidget(color: BytebankColors.black),
+          const BytebankBalance(color: BytebankColors.black),
           const HeightMargin(MarginType.large),
           StatementTransfersListWidget(listTransfers: listTransfers),
         ],
