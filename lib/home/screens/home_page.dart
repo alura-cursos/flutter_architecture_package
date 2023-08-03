@@ -21,7 +21,10 @@ class HomePage extends StatelessWidget {
       body: const HomeBackgroundWidget(
         children: [
           HomeTitleWidget(),
-          BytebankBalance(color: BytebankColors.white),
+          BytebankBalance(
+            color: BytebankColors.white,
+            userId: "ID155",
+          ),
         ],
       ),
     );

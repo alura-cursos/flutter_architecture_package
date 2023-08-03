@@ -10,7 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  http:
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
