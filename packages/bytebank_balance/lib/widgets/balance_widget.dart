@@ -74,9 +74,33 @@ class _BytebankBalanceState extends State<BytebankBalance> {
     } else {
       balanceService.hasPin(userId: widget.userId).then(
         (bool hasPin) {
-          print(hasPin);
           if (hasPin) {
-          } else {}
+            showPinDialog(context, isRegister: false).then((String? pin) {
+              if (pin != null) {
+                balanceService
+                    .getBalance(userId: widget.userId, pin: pin)
+                    .then((double balance) {
+                  setState(() {
+                    isShowingBalance = true;
+                    userBalance = balance;
+                  });
+                });
+              }
+            });
+          } else {
+            showPinDialog(context, isRegister: true).then((String? pin) {
+              if (pin != null) {
+                balanceService
+                    .createPin(userId: widget.userId, pin: pin)
+                    .then((double balance) {
+                  setState(() {
+                    isShowingBalance = true;
+                    userBalance = balance;
+                  });
+                });
+              }
+            });
+          }
         },
       );
     }
